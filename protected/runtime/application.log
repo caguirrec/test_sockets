@@ -1,0 +1,71 @@
+2016/04/15 17:32:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "testSite".' in /var/www/html/Test/vendor/square1-io/yii-framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/Test/vendor/square1-io/yii-framework/web/CController.php(270): CController->missingAction('testSite')
+#1 /var/www/html/Test/vendor/square1-io/yii-framework/web/CWebApplication.php(282): CController->run('testSite')
+#2 /var/www/html/Test/vendor/square1-io/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/testSite')
+#3 /var/www/html/Test/vendor/square1-io/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/Test/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Test/index.php?r=site/testSite
+HTTP_REFERER=http://localhost/Test/
+---
+2016/04/15 17:33:09 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "testSite".' in /var/www/html/Test/vendor/square1-io/yii-framework/web/CController.php:878
+Stack trace:
+#0 /var/www/html/Test/vendor/square1-io/yii-framework/web/CController.php(782): CController->renderPartial('testSite', NULL, true)
+#1 /var/www/html/Test/protected/controllers/SiteController.php(111): CController->render('testSite')
+#2 /var/www/html/Test/vendor/square1-io/yii-framework/web/actions/CInlineAction.php(49): SiteController->actionTestSite()
+#3 /var/www/html/Test/vendor/square1-io/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/html/Test/vendor/square1-io/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/Test/vendor/square1-io/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/Test/vendor/square1-io/yii-framework/web/CWebApplication.php(282): CController->run('testSite')
+#7 /var/www/html/Test/vendor/square1-io/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/testSite')
+#8 /var/www/html/Test/vendor/square1-io/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/html/Test/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Test/index.php?r=site/testSite
+HTTP_REFERER=http://localhost/Test/
+---
+2016/04/15 17:33:47 [error] [php] include(Alert.php): failed to open stream: No such file or directory (/var/www/html/Test/vendor/square1-io/yii-framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/html/Test/protected/views/site/testSite.php(8): spl_autoload_call()
+#1 /var/www/html/Test/vendor/square1-io/yii-framework/web/CBaseController.php(126): require()
+#2 /var/www/html/Test/vendor/square1-io/yii-framework/web/CBaseController.php(95): SiteController->renderInternal()
+#3 /var/www/html/Test/vendor/square1-io/yii-framework/web/CController.php(869): SiteController->renderFile()
+#4 /var/www/html/Test/vendor/square1-io/yii-framework/web/CController.php(782): SiteController->renderPartial()
+#5 /var/www/html/Test/protected/controllers/SiteController.php(111): SiteController->render()
+#6 /var/www/html/Test/vendor/square1-io/yii-framework/web/actions/CInlineAction.php(49): SiteController->actionTestSite()
+#7 /var/www/html/Test/vendor/square1-io/yii-framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /var/www/html/Test/vendor/square1-io/yii-framework/web/CController.php(286): SiteController->runAction()
+#9 /var/www/html/Test/vendor/square1-io/yii-framework/web/CController.php(265): SiteController->runActionWithFilters()
+#10 /var/www/html/Test/vendor/square1-io/yii-framework/web/CWebApplication.php(282): SiteController->run()
+#11 /var/www/html/Test/vendor/square1-io/yii-framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /var/www/html/Test/vendor/square1-io/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /var/www/html/Test/index.php(13): CWebApplication->run()
+REQUEST_URI=/Test/index.php?r=site/testSite
+in /var/www/html/Test/protected/views/site/testSite.php (8)
+in /var/www/html/Test/protected/controllers/SiteController.php (111)
+in /var/www/html/Test/index.php (13)
+2016/04/15 17:34:40 [error] [exception.React\Socket\ConnectionException] exception 'React\Socket\ConnectionException' with message 'Could not bind to tcp://0.0.0.0:1143: Address already in use' in /var/www/html/Test/vendor/react/socket/src/Server.php:29
+Stack trace:
+#0 /var/www/html/Test/vendor/cboden/ratchet/src/Ratchet/Server/IoServer.php(70): React\Socket\Server->listen(1143, '0.0.0.0')
+#1 /var/www/html/Test/protected/models/Alert.php(12): Ratchet\Server\IoServer::factory(Object(kanguroAlert), 1143)
+#2 /var/www/html/Test/vendor/square1-io/yii-framework/YiiBase.php(427): include('/var/www/html/T...')
+#3 [internal function]: YiiBase::autoload('Alert')
+#4 /var/www/html/Test/protected/views/site/testSite.php(8): spl_autoload_call('Alert')
+#5 /var/www/html/Test/vendor/square1-io/yii-framework/web/CBaseController.php(126): require('/var/www/html/T...')
+#6 /var/www/html/Test/vendor/square1-io/yii-framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/T...', NULL, true)
+#7 /var/www/html/Test/vendor/square1-io/yii-framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/T...', NULL, true)
+#8 /var/www/html/Test/vendor/square1-io/yii-framework/web/CController.php(782): CController->renderPartial('testSite', NULL, true)
+#9 /var/www/html/Test/protected/controllers/SiteController.php(111): CController->render('testSite')
+#10 /var/www/html/Test/vendor/square1-io/yii-framework/web/actions/CInlineAction.php(49): SiteController->actionTestSite()
+#11 /var/www/html/Test/vendor/square1-io/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /var/www/html/Test/vendor/square1-io/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /var/www/html/Test/vendor/square1-io/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/html/Test/vendor/square1-io/yii-framework/web/CWebApplication.php(282): CController->run('testSite')
+#15 /var/www/html/Test/vendor/square1-io/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/testSite')
+#16 /var/www/html/Test/vendor/square1-io/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/html/Test/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/Test/index.php?r=site/testSite
+HTTP_REFERER=http://localhost/Test/
+---

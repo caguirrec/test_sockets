@@ -7,7 +7,7 @@
  */
 new Alert();
 ?>
-<!doctype HTML>
+<!doctype HTML>   
 
 <html>
      <head>

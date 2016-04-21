@@ -7,7 +7,7 @@
  */
 include("vendor/autoload.php");
 
-$server = \Ratchet\Server\IoServer::factory(
+$server = Ratchet\Server\IoServer::factory(
         new Ratchet\Http\HttpServer(
         new Ratchet\WebSocket\WsServer(        
         new kanguroAlert()))

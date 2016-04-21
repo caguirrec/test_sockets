@@ -4,101 +4,9 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5a790162a91a28e0b36c8344f3656980",
-    "content-hash": "5f960cdf872440b3181b325ca07a0d03",
+    "hash": "877a1808512f3cba823fe4ca6af08b35",
+    "content-hash": "f04e34a20184adccea96ee6b65c2f1f6",
     "packages": [
-        {
-            "name": "square1-io/yii-framework",
-            "version": "1.1.14",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/square1-io/yii-framework.git",
-                "reference": "23f668cbc125c5b5863ca74068702719ddfa48d6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/square1-io/yii-framework/zipball/23f668cbc125c5b5863ca74068702719ddfa48d6",
-                "reference": "23f668cbc125c5b5863ca74068702719ddfa48d6",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.1.0"
-            },
-            "bin": [
-                "yiic"
-            ],
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Qiang Xue",
-                    "email": "qiang.xue@gmail.com",
-                    "homepage": "http://www.yiiframework.com/",
-                    "role": "Founder and project lead"
-                },
-                {
-                    "name": "Alexander Makarov",
-                    "email": "sam@rmcreative.ru",
-                    "homepage": "http://rmcreative.ru/",
-                    "role": "Core framework development"
-                },
-                {
-                    "name": "Maurizio Domba",
-                    "homepage": "http://mdomba.info/",
-                    "role": "Core framework development"
-                },
-                {
-                    "name": "Carsten Brandt",
-                    "email": "mail@cebe.cc",
-                    "homepage": "http://cebe.cc/",
-                    "role": "Core framework development"
-                },
-                {
-                    "name": "Wei Zhuo",
-                    "email": "weizhuo@gmail.com",
-                    "role": "Project site maintenance and development"
-                },
-                {
-                    "name": "Sebastián Thierer",
-                    "email": "sebas@artfos.com",
-                    "role": "Component development"
-                },
-                {
-                    "name": "Jeffrey Winesett",
-                    "email": "jefftulsa@gmail.com",
-                    "role": "Documentation and marketing"
-                },
-                {
-                    "name": "Timur Ruziev",
-                    "email": "resurtm@gmail.com",
-                    "homepage": "http://resurtm.com/",
-                    "role": "Core framework development"
-                },
-                {
-                    "name": "Paul Klimov",
-                    "email": "klimov.paul@gmail.com",
-                    "role": "Core framework development"
-                },
-                {
-                    "name": "Ciaran Maher",
-                    "email": "ciaran@square1.io",
-                    "homepage": "http://www.square1.io",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Yii Web Programming Framework",
-            "homepage": "http://www.yiiframework.com/",
-            "keywords": [
-                "framework",
-                "yii"
-            ],
-            "time": "2013-09-08 20:36:48"
-        }
-    ],
-    "packages-dev": [
         {
             "name": "cboden/ratchet",
             "version": "v0.3.4",
@@ -529,6 +437,96 @@
             "time": "2015-10-07 18:32:58"
         },
         {
+            "name": "square1-io/yii-framework",
+            "version": "1.1.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/square1-io/yii-framework.git",
+                "reference": "23f668cbc125c5b5863ca74068702719ddfa48d6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/square1-io/yii-framework/zipball/23f668cbc125c5b5863ca74068702719ddfa48d6",
+                "reference": "23f668cbc125c5b5863ca74068702719ddfa48d6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.1.0"
+            },
+            "bin": [
+                "yiic"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Qiang Xue",
+                    "email": "qiang.xue@gmail.com",
+                    "homepage": "http://www.yiiframework.com/",
+                    "role": "Founder and project lead"
+                },
+                {
+                    "name": "Alexander Makarov",
+                    "email": "sam@rmcreative.ru",
+                    "homepage": "http://rmcreative.ru/",
+                    "role": "Core framework development"
+                },
+                {
+                    "name": "Maurizio Domba",
+                    "homepage": "http://mdomba.info/",
+                    "role": "Core framework development"
+                },
+                {
+                    "name": "Carsten Brandt",
+                    "email": "mail@cebe.cc",
+                    "homepage": "http://cebe.cc/",
+                    "role": "Core framework development"
+                },
+                {
+                    "name": "Wei Zhuo",
+                    "email": "weizhuo@gmail.com",
+                    "role": "Project site maintenance and development"
+                },
+                {
+                    "name": "Sebastián Thierer",
+                    "email": "sebas@artfos.com",
+                    "role": "Component development"
+                },
+                {
+                    "name": "Jeffrey Winesett",
+                    "email": "jefftulsa@gmail.com",
+                    "role": "Documentation and marketing"
+                },
+                {
+                    "name": "Timur Ruziev",
+                    "email": "resurtm@gmail.com",
+                    "homepage": "http://resurtm.com/",
+                    "role": "Core framework development"
+                },
+                {
+                    "name": "Paul Klimov",
+                    "email": "klimov.paul@gmail.com",
+                    "role": "Core framework development"
+                },
+                {
+                    "name": "Ciaran Maher",
+                    "email": "ciaran@square1.io",
+                    "homepage": "http://www.square1.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Yii Web Programming Framework",
+            "homepage": "http://www.yiiframework.com/",
+            "keywords": [
+                "framework",
+                "yii"
+            ],
+            "time": "2013-09-08 20:36:48"
+        },
+        {
             "name": "symfony/event-dispatcher",
             "version": "v3.0.4",
             "source": {
@@ -776,6 +774,7 @@
             "time": "2016-03-23 13:23:25"
         }
     ],
+    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],

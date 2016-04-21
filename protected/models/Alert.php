@@ -5,7 +5,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-include("vendor/autoload.php");
+//include("vendor/autoload.php");
 
 $server = Ratchet\Server\IoServer::factory(
         new Ratchet\Http\HttpServer(

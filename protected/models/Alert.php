@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 //include("vendor/autoload.php");
-require_once 'vendor\cboden\ratchet\src\Ratchet\Server\IoServer.php';
+require_once '\vendor\cboden\ratchet\src\Ratchet\Server\IoServer.php';
 
 $server = IoServer::factory(
         new Ratchet\Http\HttpServer(

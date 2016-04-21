@@ -10,5 +10,5 @@ $server = Ratchet\Server\IoServer::factory(
         new Ratchet\Http\HttpServer(
         new Ratchet\WebSocket\WsServer(        
         new kanguroAlert()))
-        ,443);
+        ,80);
 $server->run();

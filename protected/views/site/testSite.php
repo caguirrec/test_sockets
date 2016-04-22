@@ -10,7 +10,7 @@ require_once 'WebSocketServer.php';
 
 $chat = new WebsocketChat();
 // new WebSocketServer( socket address, socket port, callback function )
-$webSocket = new WebSocketServer("84.38.67.247", 8081, array($chat, 'process'));
+$webSocket = new WebSocketServer($_SERVER['SERVER_ADDR'], 8081, array($chat, 'process'));
 $webSocket->run();
 
 

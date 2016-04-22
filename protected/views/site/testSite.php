@@ -5,16 +5,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
-require_once 'WebSocketServer.php';
-
-$chat = new WebsocketChat();
-// new WebSocketServer( socket address, socket port, callback function )
-$webSocket = new WebSocketServer($_SERVER['SERVER_ADDR'], 8081, array($chat, 'process'));
-$webSocket->run();
-
-
-
+new Alert();
 ?>
 <!doctype HTML>   
 

@@ -5,8 +5,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-    require '../../vendor/autoload.php';
-    require '../../protected/models/kanguroAlert.php';
+    require '../vendor/autoload.php';
+    require '../protected/models/kanguroAlert.php';
     $server = Ratchet\Server\IoServer::factory(
         new \Ratchet\Http\HttpServer(
         new Ratchet\WebSocket\WsServer(new kanguroAlert()))

@@ -113,6 +113,6 @@ class SiteController extends Controller
         
         public function actionAlert(){
             error_log("im an alert message");
-            $this->render('index';)
+            $this->render('index');
         }
 }

@@ -5,10 +5,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-include("vendor/autoload.php");
-
-$server = Ratchet\Server\IoServer::factory(
+    require '../../vendor/autoload.php';
+    require '../../protected/models/kanguroAlert.php';
+    $server = Ratchet\Server\IoServer::factory(
         new \Ratchet\Http\HttpServer(
         new Ratchet\WebSocket\WsServer(new kanguroAlert()))
-        ,8080,  gethostbyname(gethostname()));
+        ,8080,'0.0.0.0');
 $server->run();

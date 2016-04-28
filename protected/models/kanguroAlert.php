@@ -6,7 +6,9 @@
  * and open the template in the editor.
  */
 
-class kanguroAlert implements \Ratchet\MessageComponentInterface{
+use Ratchet\MessageComponentInterface;
+use Ratchet\ConnectionInterface;
+class kanguroAlert implements MessageComponentInterface{
     protected $clients;
     
     public function __construct() {

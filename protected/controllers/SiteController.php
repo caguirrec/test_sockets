@@ -110,4 +110,8 @@ class SiteController extends Controller
         public function actionTestSite(){
             $this->render('testSite');
         }
+        
+        public function actionAlert(){
+            error_log("im an alert message");
+        }
 }

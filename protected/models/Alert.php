@@ -9,7 +9,7 @@
     require 'kanguroAlert.php';
     use Ratchet\ConnectionInterface;
     echo(gethostbyname(gethostname()));
-    $app = new Ratchet\App(gethostbyname(gethostname()), 8080, '0.0.0.0');
+    $app = new Ratchet\App(gethostbyname(gethostname()), 80, '0.0.0.0');
     $app->route('/chat', new kanguroAlert(),array('*'));
     $app->run();
     

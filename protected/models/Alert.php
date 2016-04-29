@@ -5,10 +5,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-    require 'vendor/autoload.php';
-    require 'kanguroAlert.php';
-    $server = Ratchet\Server\IoServer::factory(
-        new \Ratchet\Http\HttpServer(
-        new Ratchet\WebSocket\WsServer(new kanguroAlert()))
-        ,8080,'0.0.0.0');
-$server->run();
+    require '../../vendor/autoload.php';
+    require '../models/kanguroAlert.php';
+    use Ratchet\ConnectionInterface;
+    echo(gethostbyname(gethostname()));
+    $app = new Ratchet\App(gethostbyname(gethostname()), 8080, '0.0.0.0');
+    $app->route('/chat', new kanguroAlert(),array('*'));
+    $app->run();
+    

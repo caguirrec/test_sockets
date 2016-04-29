@@ -5,8 +5,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-    require '../../vendor/autoload.php';
-    require '../models/kanguroAlert.php';
+    require 'vendor/autoload.php';
+    require 'kanguroAlert.php';
     use Ratchet\ConnectionInterface;
     echo(gethostbyname(gethostname()));
     $app = new Ratchet\App(gethostbyname(gethostname()), 8080, '0.0.0.0');
